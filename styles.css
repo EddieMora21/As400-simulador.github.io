@@ -1,0 +1,151 @@
+/* Estilo general para el cuerpo */
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    color: #0f0;
+    font-family: monospace;
+    flex-direction: column;
+}
+
+/* Para cada pantalla, aseguramos que el contenido esté centrado */
+.screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Estilo de los títulos */
+h1 {
+    color: #fff;
+    text-align: center;
+}
+
+/* Estilo de los párrafos */
+.screen p {
+    margin-right: 260px;
+    font-size: 18px;
+}
+
+/* Estilos específicos para los inputs de command */
+#commandInput1, #commandInput2 {
+    margin-right: 290px;
+    width: 10%;
+}
+
+/* Comandos disponibles */
+.command-options {
+    margin-top: 20px;
+}
+
+.command-options p {
+    color: #fff;
+}
+
+.command-options ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.command-options ul li {
+    background-color: #333;
+    color: #0f0;
+    padding: 8px 15px;
+    margin: 5px;
+    border: 1px solid #0f0;
+    white-space: nowrap;
+}
+
+/* Contenedor de comandos */
+.command-container {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.command-container label {
+    display: inline-block;
+    width: 120px;
+    text-align: right;
+    color: #0f0;
+}
+
+/* Estilo general para los inputs */
+input[type="text"], input[type='password'] {
+    background-color: #333;
+    color: #0f0;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+
+/* Estilo específico para los inputs pequeños */
+#commandInputpersoncif1, #commandInputpersoncif2 {
+    width: 7ch;
+}
+
+#commandInputpersoncif3 {
+    width: 3ch;
+}
+
+/* Contenedor para los inputs alineados horizontalmente */
+.inline-inputs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* Estilo para los labels dentro del contenedor */
+.inline-inputs label {
+    color: #0f0;
+    margin-right: 10px;
+}
+
+/* Estilo para los inputs alineados dentro del contenedor */
+.inline-inputs input[type="text"] {
+    background-color: #333;
+    color: #0f0;
+    border: none;
+    padding: 5px;
+    margin-right: 15px;
+    text-align: center;
+    font-size: 18px;
+    width: auto;
+}
+
+/* Ajustes específicos para CIF, Cédula y Tarjeta */
+#p-CIF-CED-TARJETA {
+    margin: 0;
+}
+
+#cedulaInput {
+    width: 14ch;
+}
+
+#tarjetaInput {
+    width: 22ch;
+}
+
+/* Estilo para el botón de envío */
+button {
+    margin-top: 10px;
+    background-color: #000;
+    border: none;
+    
+    padding: 10px;
+    
+}
+
+

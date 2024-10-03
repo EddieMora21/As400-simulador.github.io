@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulación AS/400 - Persona</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="navigation.js" defer></script>
+</head>
+<body>
+    <div class="screen" id="personaScreen">
+        <h1>Información de Persona</h1>
+        
+        <!-- Formulario que engloba los campos -->
+        <form id="personaForm">
+            <p id="p-CIF-CED-TARJETA">CIF</p>
+
+            <!-- Nuevo contenedor para los inputs alineados de manera lineal -->
+            <div class="inline-inputs">
+                <label for="commandInputpersoncif1">4 Apellido:</label>
+                <input type="text" id="commandInputpersoncif1" maxlength="4" size="4" autocomplete="off">
+                
+                <label for="commandInputpersoncif2">4 Nombre:</label>
+                <input type="text" id="commandInputpersoncif2" maxlength="4" size="4" autocomplete="off">
+                
+                <label for="commandInputpersoncif3">1er Apellido:</label>
+                <input type="text" id="commandInputpersoncif3" maxlength="1" size="1" autocomplete="off">
+            </div>
+            <p id="p-CIF-CED-TARJETA">Cedula</p>
+            <!-- Nuevos campos para Cédula y Número de tarjeta -->
+            <div class="inline-inputs">
+                <input type="text" id="cedulaInput" maxlength="12" size="10" autocomplete="off">
+            </div>
+            <p id="p-CIF-CED-TARJETA">Número de Tarjeta</p>
+            <div class="inline-inputs"></div>
+                <input type="text" id="tarjetaInput" maxlength="16" size="16" autocomplete="off">
+            </div>
+
+            <!-- Botón para enviar el formulario -->
+            <button type="submit" id="submitPersona">Enviar</button>
+        </form>
+
+        <!-- Opciones de comandos disponibles -->
+        <div class="command-options">
+            <ul>
+                <li>F3 = Regresar</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
