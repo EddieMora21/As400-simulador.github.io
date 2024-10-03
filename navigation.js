@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function () {
         commandInputPersona.addEventListener('keydown', function (event) {
             if (event.key === 'Enter') {
                 const command = commandInputPersona.value.trim();
-                handleCommand(command, 'persona');
+                handleCommand(command, 'Persona');
             }
         });
     }
@@ -59,8 +59,8 @@ document.addEventListener('DOMContentLoaded', function () {
             if (currentTerminal === 'terminal1') {
                 window.location.href = 'terminal2.html';
             } else if (currentTerminal === 'terminal2') {
-                window.location.href = 'persona.html';
-            } else if (currentTerminal === 'persona') {
+                window.location.href = 'Persona.html';
+            } else if (currentTerminal === 'Persona') {
                 // Lógica para el comando en la pantalla Persona (puedes personalizar esto si es necesario)
                 alert("Formulario enviado.");
             }
